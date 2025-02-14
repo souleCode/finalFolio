@@ -1,28 +1,3 @@
-
-const services=[
-  {
-    num:'01',
-    title:"Developpement web",
-    description:"Un projet j'ai eu a bosser sur la creation d'un site de location des maisons. Ce projet a pour but de faciliter les locations de maison pour les etudiants et meme pour les travailleurs. Les bailleurs ou demarcheurs postes les maisons libres avec toutes les informations necessaires et les locataires reserves et rentrent en contact avec le bailleur/demarcheur.",
-    href:"https://findhousebf.great-site.net/",
-  },
-  {
-    num:'02',
-    title:"Developpement web",
-    description:"Le blog pour notre StartUp PRO Htech. Dans ce blog nous avons creer des fonctionnalités avancées pour facilter la communication entre NOUS et Notre Commununauté",
-    href:"https://prohtech.rf.gd/",
-  },
-  {
-    num:'03',
-    title:"Intelligence Artificielle",
-    description:"Une IA pour Assister le public sur certains services public du Benin. On a travailler sur ce projet lors du BootCamp2024 de Africa Tech Up Tour 2024. Malheureusment j'ai pas pu participer a ce BootCamp mais j'ai eu a travailler sur le même projet.",
-    href:"/#",
-  },
-  {
-    num:'04',
-    title:"Intelligence Artificielle",
-    description:"Une IA qui classe vos object en Recyclable et Non-Recyclable en se basant sur la photo de l'objet. Ceci peut être appliquer dans plusieurs domaine de l'industrie",
-    href:"/#",
-  },
-
-]
+git add .
+git commit -m "Message de commit"
+git push
