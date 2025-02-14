@@ -6,3 +6,5 @@ const Contact = () => {
   )
 }
 export default Contact;
+
+// Debut de la page contact le weekend du 15/02/025
