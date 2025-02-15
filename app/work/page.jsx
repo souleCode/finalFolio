@@ -36,7 +36,7 @@ const projects=[
     title:"Application Mobile de Prédiction Agricole et Diagnostic des Plantes par IA",
     description:"Ce projet vise à développer une application mobile innovante qui aide les agriculteurs à optimiser leurs rendements agricoles et à détecter précocement les maladies des plantes grâce à l'intelligence artificielle (IA). L'objectif est de fournir un outil accessible et efficace pour améliorer la productivité agricole tout en réduisant les pertes liées aux maladies.",
     stack:[
-      {name:"React Native"},
+      {name:"Flet"},
       {name:"TensorFlow"},
       {name:"Python"},
       {name:"Flask"},
