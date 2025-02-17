@@ -38,8 +38,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Derniere partie
 
 - Ajouter les skills de IA et Genie Industriel dans l'onglet _competences_
-- Ajouter les certifications et les photo dans la parties _Formation_
-- Completer les services avec 'digitalisation industriel' dans l'onglet Services\_
+- Ajouter les certifications et les photo dans la parties _Formation_ "fait le 17/02/025"
+- Completer les services avec 'digitalisation industriel' dans l'onglet Services "fait le 17/02/025"
 - Ajouter mon Cv sous le btn Cv dans l'onglet _Accueil_
 
 ## Configuration du fichier .eslintrc.js pour le deployement

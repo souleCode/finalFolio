@@ -12,6 +12,15 @@ import {
 // import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
 // import { FaDatabase as FaSql } from 'react-icons/fa'; // Si vous avez renommé une icône
 import {SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import KerasIcon from '@/components/icons/Keras';
+import MatplotlibIcon from '@/components/icons/Matplotlib';
+import SeabornIcon from '@/components/icons/Seaborn';
+import PandasIcon from '@/components/icons/Pandas';
+import TensorFlowIcon from '@/components/icons/Tensorflow';
+import ScipyIcon from '@/components/icons/Scipy';
+import DjangoIcon from '@/components/icons/Django';
+import FlaskIcon from '@/components/icons/Flask';
+import SqlIcon from '@/components/icons/SQL';
 
 // import {
 //   SitTailwindcss, SiNextdotjs
@@ -57,7 +66,7 @@ const about={
 const experience = {
   icon: '/assets/images/experience.png',
   title: 'Mon experience',
-  description: "Développement web full stack ",
+  description: "Avec plusieurs années d'expérience professionnelle dans le domaine des technologies de l'information, j'ai eu l'opportunité de travailler sur des projets variés et stimulants, allant du développement d'applications web et mobiles à la mise en œuvre de solutions d'intelligence artificielle et de data science. Mon parcours m'a permis d'acquérir une expertise technique solide tout en développant des compétences transversales en gestion de projet, collaboration d'équipe et résolution de problèmes complexes. Chaque expérience a renforcé ma capacité à m'adapter rapidement aux nouveaux environnements, à comprendre les besoins métier et à proposer des solutions innovantes et efficaces ",
   items: [
     {
       company: "CodSoft",
@@ -81,56 +90,138 @@ const experience = {
     },
   ],
 };
-const certifications = [
-  {
-    title: "Certification en Développement Web",
-    institution: "Udemy",
-    duration: "2022",
-    image:"/images/certification"  //Photo de la certif
-  },
-  {
-    title: "Certification en Data Science",
-    institution: "DataCamp",
-    duration: "2023",
-    image:"/images/certification"  //Photo de la certif
-  },
-  {
-    title: "Certification en IA",
-    institution: "Coursera",
-    duration: "2024",
-    image:"/images/certification"  //Photo de la certif
-  },
-  {
-    title: "Certification en Gestion de Projet",
-    institution: "Udemy",
-    duration: "2022",
-    image:"/images/certification"  //Photo de la certif
-  },
-  {
-    title: "Certification en Développement Web",
-    institution: "Udemy",
-    duration: "2022",
-    image:"/images/certification"  //Photo de la certif
-  },
-  {
-    title: "Certification en Data Science",
-    institution: "DataCamp",
-    duration: "2023",
-    image:"/images/certification"  //Photo de la certif
-  },
-  {
-    title: "Certification en IA",
-    institution: "Coursera",
-    duration: "2024",
-    image:"/images/certification"  //Photo de la certif
-  },
-  {
-    title: "Certification en Gestion de Projet",
-    institution: "Udemy",
-    duration: "2022",
-    image:"/images/certification"  //Photo de la certif
-  },
-]
+// Certif IA/DS
+const certifications = {
+  title: 'Mes Certifications en IA/Data Science',
+  items: [
+    {
+      title: "Deep Learning: De Zéro à la Certification Tensorflow",
+      institution: "Udemy",
+      duration: "ID: UC-4168169f-2a6c4e-2e-838f-5d7b1735278f",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Construire les modèles non supervisés",
+      institution: "CentraleSupélec",
+      duration: "ID: 4942497317",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Explorez les données avec des modèles Non Superivés",
+      institution: "CentraleSupélec",
+      duration: "ID: 1704755782",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Requetez une base de données avec SQL",
+      institution: "OpenClassrom",
+      duration: "ID: 4378300745",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Analysez les données textuelles",
+      institution: "CentraleSupélec",
+      duration: "ID: 6455606015",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Evaluez les performances d'un modèle ML",
+      institution: "CentraleSupélec",
+      duration: "ID: 2712019692",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Netoyage et Analyse des données",
+      institution: "OpenClassroom",
+      duration: "ID: 7246317626",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Initiation aux modèles de Deep Learning",
+      institution: "Openclassroom",
+      duration: "ID: 9983515599",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Analysez et Modelisez les series temporelles",
+      institution: "OpenClassroom",
+      duration: "ID: 2918328515",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Machine Learning Methods for Beginners",
+      institution: "MindLuster",
+      duration: "ID: 17123050655",
+      image:"/images/certification"  //Photo de la certif
+    },
+  
+  ]
+
+}
+// Certif Web
+const certifWeb = {
+  title: 'Mes Certifications en Developpement Web',
+  items: [
+    {
+      title: "MERN Stack",
+      institution: "Udemy",
+      duration: "ID: UC-a39b23ff-7137-4f3b-8d6c-acca9f12d85c",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "React&Next.js: From beginner to Pro",
+      institution: "Udemy",
+      duration: "ID: UC-67162148-b95e-41ef-b21a-2bd64d1cde73",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Developpement Web Full Stack A à Z",
+      institution: "Udemy",
+      duration: "ID: UC-9fde37a0-1dbc-4ca6-868b-a542ea48543a",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Adoptez les APIs REST pour les projets web",
+      institution: "OpenClassroom",
+      duration: "ID: 7078712727",
+      image:"/images/certification"  //Photo de la certif
+    },
+  ]
+
+}
+// Certif Programming
+const certifProgramming = {
+  title: 'Mes Certifications en Informatique Générale',
+  items: [
+    {
+      title: "Decouvrez le fonctionnement des algorithmes",
+      institution: "OpenClassroom",
+      duration: "ID: 7239562413",
+      image:"/images/certification"  //Photo de la certif
+    },
+
+    {
+      title: "Ecrire du code Python maintenable",
+      institution: "OpenClassroom",
+      duration: "ID: 4465378927",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Gerz du code avec Git et GitHub",
+      institution: "OpenClassroom",
+      duration: "ID: 2286640726",
+      image:"/images/certification"  //Photo de la certif
+    },
+    {
+      title: "Testez vos projet Python",
+      institution: "OpenClassroom",
+      duration: "ID: 1607277454",
+      image:"/images/certification"  //Photo de la certif
+    },
+  ]
+
+}
+
 const education = {
   icon: '/assets/images/educ.png',
   title: 'Mon Parcours de Formation',
@@ -159,8 +250,8 @@ const education = {
   ],
 };
 const skills={
-  title: "Mes compétences Techniques en Développement Web/Mobile",
-  description: "Descriptionde mes competences techniques",
+  title: "Mes compétences Techniques",
+  description: "Doté d'un solide bagage technique et d'une expertise polyvalente, je maîtrise un large éventail de technologies et d'outils pour répondre aux défis complexes des projets modernes. Que ce soit en développement web, mobile, desktop, en intelligence artificielle, en data science ou en gestion de bases de données, je combine une approche méthodique et une passion pour l'innovation pour livrer des solutions performantes et adaptées aux besoins métier. Mon expérience couvre l'ensemble du cycle de vie des projets, de la conception à la mise en production, en passant par l'optimisation et la maintenance. En constante veille technologique, je m'efforce de rester à la pointe des dernières tendances pour proposer des solutions innovantes et durables.",
   skillist: [
     {
       icon:<FaHtml5/>,
@@ -186,14 +277,14 @@ const skills={
       icon:<FaPython/>,
       name: "Python",
     },
-    // {
-    //   icon:<FaSql/>,
-    //   name: "Database SQL",
-    // },
-    // {
-    //   icon:<FaFlask/>,
-    //   name: "Flask API",
-    // },
+    {
+      icon:<KerasIcon/>,
+      name: "Keras",
+    },
+    {
+      icon:<MatplotlibIcon/>,
+      name: "Matplotlib",
+    },
     {
       icon:<SiTailwindcss/>,
       name: "Tailwind CSS",
@@ -202,55 +293,37 @@ const skills={
       icon:<SiNextdotjs/>,
       name: "Next.js",
     },
-  ]
-}
-// A ajouter des skills et leurs icons
-const skillsdataia={
-  title: "Mes compétences Techniques Data/IA",
-  description: "Descriptionde mes competences techniques",
-  skillist: [
     {
-      icon:<FaHtml5/>,
-      name: "html 5",
+      icon:<SeabornIcon/>,
+      name: "Seaborn",
     },
     {
-      icon:<FaCss3/>,
-      name: "Css3",
+      icon:<PandasIcon/>,
+      name: "Pandas",
     },
     {
-      icon:<FaJs/>,
-      name: "JavaScript",
+      icon:<TensorFlowIcon/>,
+      name: "Tensorflow",
     },
     {
-      icon:<FaReact/>,
-      name: "React.js",
+      icon:<ScipyIcon/>,
+      name: "Scipy",
     },
     {
-      icon:<FaNodeJs/>,
-      name: "NodeJs",
+      icon:<DjangoIcon/>,
+      name: "Django",
     },
     {
-      icon:<FaPython/>,
-      name: "Python",
-    },
-    // {
-    //   icon:<FaSql/>,
-    //   name: "Database SQL",
-    // },
-    // {
-    //   icon:<FaFlask/>,
-    //   name: "Flask API",
-    // },
-    {
-      icon:<SiTailwindcss/>,
-      name: "Tailwind CSS",
+      icon:<FlaskIcon/>,
+      name: "Flask",
     },
     {
-      icon:<SiNextdotjs/>,
-      name: "Next.js",
+      icon:<SqlIcon/>,
+      name: "SQL",
     },
   ]
 }
+
 
 import {Tabs, TabsContent,TabsList,TabsTrigger} from '@/components/ui/tabs';
 import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger } from '@/components/ui/tooltip';
@@ -282,9 +355,9 @@ const Resume = () => {
               <TabsContent value="experience" className="w-full">
                   <div className='flex flex-col gap-[30px] text-center xl:text-left '>
                     <h3 className='text-4xl font-bold '>{experience.title} </h3>
-                    <span className="flex items-center justify-center">
+                    {/* <span className="flex items-center justify-center">
                           <img src={experience.icon} alt="Experience Icon" className="w-20 h-20" />
-                    </span>
+                    </span> */}
 
                     <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0 '>{experience.description} </p>
                     <ScrollArea className="h-[400px] ">
@@ -304,14 +377,15 @@ const Resume = () => {
                       </ul>
                     </ScrollArea>
                   </div>
+                  <div className='h-[20px]' ></div>
               </TabsContent>
               {/* Education */}
               <TabsContent value="education" className="w-full">
               <div className='flex flex-col gap-[30px] text-center xl:text-left '>
                     <h3 className='text-4xl font-bold '>{education.title} </h3>
-                    <span className="flex items-center justify-center">
+                    {/* <span className="flex items-center justify-center">
                           <img src={education.icon} alt="education Icon" className="w-20 h-20" />
-                    </span>
+                    </span> */}
                     <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0 '>{education.description} </p>
                     <ScrollArea className="h-[400px] ">
                       <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px] '>
@@ -358,39 +432,14 @@ const Resume = () => {
                     </ul>
                 </div>
                       <div className='h-[100px] '></div>
-                {/* Data/AI Skills */}
 
-                <div className='flex flex-col gap-[30px] ' >
-                    <div className='flex flex-col gap-[30px] text-center xl:text-left ' >
-                    <h3 className='text-4xl font-bold' >{skillsdataia.title} </h3>
-                    <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0 ' >{skills.description} </p>
-                    </div>
-                    <ul className='grid gap-[30px] grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] ' >
-                      {skills.skillist.map((skill,index) =>{
-                        return (
-                          <li key ={index} >
-                            <TooltipProvider>
-                              <Tooltip>
-                                <TooltipTrigger className='w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group ' >
-                                  <div className='text-6xl transition-all duration-300 group-hover:text-accent ' >{skill.icon} </div>
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                  <p>{skill.name} </p>
-                                </TooltipContent>
-                              </Tooltip>
-                            </TooltipProvider>
-                          </li>
-                        )
-                      })}
-                    </ul>
-                </div>
               </TabsContent>
               {/* certifications */}
               <TabsContent value="certifications" className="w-full">
-              <div className='flex flex-col gap-[30px] ' >
-                    <h3 className='text-4xl font-bold ' >Mes Certifications</h3>
+                <div className='flex flex-col gap-[30px] ' >
+                    <h3 className='text-4xl font-bold' >{certifications.title} </h3>
                     <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px] ' >
-                      {certifications.map((certif,index) =>{
+                      {certifications.items.map((certif,index) =>{
                         return (
                           <li key={index} className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 ' >
                             <span className='text-accent' >{certif.duration} </span>
@@ -401,9 +450,54 @@ const Resume = () => {
                               <p className='text-white/60' >{certif.institution} </p>
                             </div>
                           </li>
+
                         )
                       })}
                     </ul>
+                    <div className='h-[20px]'></div>
+                  </div>
+                  <div className='h-[50px]' ></div>
+                  {/* Certif web */}
+                  <div className='flex flex-col gap-[30px] ' >
+                    <h3 className='text-4xl font-bold' >{certifWeb.title} </h3>
+                    <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px] ' >
+                      {certifWeb.items.map((certif,index) =>{
+                        return (
+                          <li key={index} className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 ' >
+                            <span className='text-accent' >{certif.duration} </span>
+                            <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ' >{certif.title} </h3>
+                            <div className='flex items-center gap-3' >
+                              {/* dot */}
+                              <span className='w-[6px] h-[6px] rounded-full bg-accent' > </span>
+                              <p className='text-white/60' >{certif.institution} </p>
+                            </div>
+                          </li>
+
+                        )
+                      })}
+                    </ul>
+                    <div className='h-[20px]'></div>
+                  </div>
+                  {/* Certif Informatique generale */}
+                  <div className='flex flex-col gap-[30px] ' >
+                    <h3 className='text-4xl font-bold' >{certifProgramming.title} </h3>
+                    <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px] ' >
+                      {certifProgramming.items.map((certif,index) =>{
+                        return (
+                          <li key={index} className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 ' >
+                            <span className='text-accent' >{certif.duration} </span>
+                            <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ' >{certif.title} </h3>
+                            <div className='flex items-center gap-3' >
+                              {/* dot */}
+                              <span className='w-[6px] h-[6px] rounded-full bg-accent' > </span>
+                              <p className='text-white/60' >{certif.institution} </p>
+                            </div>
+                          </li>
+
+                        )
+                      })}
+                    </ul>
+                    <div className='h-[20px]'></div>
                   </div>
               </TabsContent>
                 
