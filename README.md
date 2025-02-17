@@ -41,3 +41,17 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Ajouter les certifications et les photo dans la parties _Formation_
 - Completer les services avec 'digitalisation industriel' dans l'onglet Services\_
 - Ajouter mon Cv sous le btn Cv dans l'onglet _Accueil_
+
+## Configuration du fichier .eslintrc.js pour le deployement
+
+{
+"extends": "next/core-web-vitals",
+"rules": {
+"react/no-unescaped-entities": "off",
+"@typescript-eslint/quotes": "off",
+"quotes": [0],
+"avoideEscape": 0,
+"allowTemplateLiterals": 0,
+"no-useless-escape": 0
+}
+}
