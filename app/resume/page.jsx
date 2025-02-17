@@ -18,7 +18,7 @@ import {SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 // } from 'react-icons/si';
 
 import React from 'react'
-import { Description } from '@radix-ui/react-dialog';
+
 
 //about
 const about={
@@ -81,7 +81,56 @@ const experience = {
     },
   ],
 };
-
+const certifications = [
+  {
+    title: "Certification en Développement Web",
+    institution: "Udemy",
+    duration: "2022",
+    image:"/images/certification"  //Photo de la certif
+  },
+  {
+    title: "Certification en Data Science",
+    institution: "DataCamp",
+    duration: "2023",
+    image:"/images/certification"  //Photo de la certif
+  },
+  {
+    title: "Certification en IA",
+    institution: "Coursera",
+    duration: "2024",
+    image:"/images/certification"  //Photo de la certif
+  },
+  {
+    title: "Certification en Gestion de Projet",
+    institution: "Udemy",
+    duration: "2022",
+    image:"/images/certification"  //Photo de la certif
+  },
+  {
+    title: "Certification en Développement Web",
+    institution: "Udemy",
+    duration: "2022",
+    image:"/images/certification"  //Photo de la certif
+  },
+  {
+    title: "Certification en Data Science",
+    institution: "DataCamp",
+    duration: "2023",
+    image:"/images/certification"  //Photo de la certif
+  },
+  {
+    title: "Certification en IA",
+    institution: "Coursera",
+    duration: "2024",
+    image:"/images/certification"  //Photo de la certif
+  },
+  {
+    title: "Certification en Gestion de Projet",
+    institution: "Udemy",
+    duration: "2022",
+    image:"/images/certification"  //Photo de la certif
+  },
+]
 const education = {
   icon: '/assets/images/educ.png',
   title: 'Mon Parcours de Formation',
@@ -224,6 +273,7 @@ const Resume = () => {
             <TabsTrigger value="experience">Expérience</TabsTrigger>
             <TabsTrigger value="education">Formation</TabsTrigger>
             <TabsTrigger value="skills">Compétences</TabsTrigger>
+            <TabsTrigger value="certifications">Certifications</TabsTrigger>
             <TabsTrigger value="about">A Propos</TabsTrigger>
           </TabsList>
           {/* Content pour afficher contenus du Tabs */}
@@ -335,6 +385,28 @@ const Resume = () => {
                     </ul>
                 </div>
               </TabsContent>
+              {/* certifications */}
+              <TabsContent value="certifications" className="w-full">
+              <div className='flex flex-col gap-[30px] ' >
+                    <h3 className='text-4xl font-bold ' >Mes Certifications</h3>
+                    <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px] ' >
+                      {certifications.map((certif,index) =>{
+                        return (
+                          <li key={index} className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 ' >
+                            <span className='text-accent' >{certif.duration} </span>
+                            <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ' >{certif.title} </h3>
+                            <div className='flex items-center gap-3' >
+                              {/* dot */}
+                              <span className='w-[6px] h-[6px] rounded-full bg-accent' > </span>
+                              <p className='text-white/60' >{certif.institution} </p>
+                            </div>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </div>
+              </TabsContent>
+                
 
               {/* about */}
               <TabsContent value="about" className="w-full text-center xl:text-left">
