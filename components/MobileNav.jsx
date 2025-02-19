@@ -27,7 +27,7 @@ const links = [
     name: 'Contact',
     path: "/contact",
   },
-];
+]
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +67,7 @@ const MobileNav = () => {
         </nav>
       </SheetContent>
     </Sheet>
-  );
-};
+  )
+}
 
 export default MobileNav
