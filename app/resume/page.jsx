@@ -6,8 +6,6 @@ import {
   FaReact,
   FaNodeJs,
   FaPython,
-  FaSql,
-  FaFlask,
 } from 'react-icons/fa';
 // import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaPython } from 'react-icons/fa';
 // import { FaDatabase as FaSql } from 'react-icons/fa'; // Si vous avez renommé une icône
@@ -21,11 +19,6 @@ import ScipyIcon from '@/components/icons/Scipy';
 import DjangoIcon from '@/components/icons/Django';
 import FlaskIcon from '@/components/icons/Flask';
 import SqlIcon from '@/components/icons/SQL';
-
-// import {
-//   SitTailwindcss, SiNextdotjs
-// } from 'react-icons/si';
-
 import React from 'react'
 
 
@@ -225,11 +218,11 @@ const certifProgramming = {
 const education = {
   icon: '/assets/images/educ.png',
   title: 'Mon Parcours de Formation',
-  description: "Ayant obtenu mon Bac à l'âge de 17 ans et etant passionnée de l'Informatique et ses Applications, je decide donc de continuer mes Etudes Superieures dans Une Grande Ecole. De ce fait j'ai obtenu une Bourse d'etude vers le Maroc ou je suis inscrit a l'Ecole Nationale Superieure Arts&Metiers de Meknes qui est une grande Ecole d'Ingenieur au Maroc. Après les années ppreparatoires Integrées j'ai choisi donc Genie Industriel Option IA/Data Science.",
+  description: "Ayant obtenu mon Bac à l'âge de 19 ans et étant passionné de l'Informatique et ses Applications, je décide donc de continuer mes Etudes Supérieures dans Une Grande Ecole. De ce fait j'ai obtenu une Bourse d'étude vers le Maroc où je suis inscrit à l'Ecole Nationale Supérieure Arts&Metiers de Meknes qui est une grande Ecole d'Ingénieur au Maroc. Après les années préparatoires Intégrées j'ai choisi donc la filière Génie Industriel Option IA/Data Science.",
   items: [
     {
       institution: "Collège Protestant de Ouagadougou (Burkina Faso)",
-      degree: "Diplome du Baccalaureat serie D",
+      degree: "Diplôme du Baccalaureat serie D",
       duration: "Octobre 2019-Juillet 2021",
     },
     {
@@ -526,4 +519,4 @@ const Resume = () => {
     </motion.div>
   )
 }
-export default Resume;
+export default Resume
