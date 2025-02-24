@@ -114,6 +114,6 @@ const Contact = () => {
     </motion.section>
   )
 }
-export default Contact;
+export default Contact
 
 // Debut de la page contact le 17/02/025
