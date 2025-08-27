@@ -18,8 +18,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "souleCode Porte Folio",
-  description: "Developped by Soule Code",
+  title: "souleCode portfolio",
+  description: "Developped by SouleCode",
 };
 
 export default function RootLayout({ children }) {
@@ -29,11 +29,11 @@ export default function RootLayout({ children }) {
         className={`${jetbrainsMono.variable} ${jetbrainsMono.variable} antialiased`}
       >
         <Header />
-        <StairTransition/>
+        <StairTransition />
         <PageTransition>
-        {children}
+          {children}
         </PageTransition>
-        
+
       </body>
     </html>
   )

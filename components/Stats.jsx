@@ -1,10 +1,10 @@
 "use client";
 
-import CountUp from "react-countup"; 
+import CountUp from "react-countup";
 
 const stats = [
   {
-    num: 3,
+    num: 4,
     text: "Années d'expériences",
   },
   {
@@ -24,23 +24,23 @@ const stats = [
 const Stats = () => {
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
-        <div className="container mx-auto">
-            <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none "> 
-            {stats.map((stat, index) => (
-                <div key={index} className="items-center flex flex-1 gap-4 justify-center xl:justify-start">
-                    <CountUp
-                        end={stat.num}
-                        duration={5}
-                        delay={2}
-                        className="text-4xl text-outline xl:text-6xl font-extrabold" // Correction du "extrabold"
-                    />
-                    <p className={`${stat.text.length ? "max-w-[100px]": "max-w-[150px]"}leading-snug text-white/80 `}>
-                        {stat.text}
-                    </p>
-                </div>
-            ))}
+      <div className="container mx-auto">
+        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none ">
+          {stats.map((stat, index) => (
+            <div key={index} className="items-center flex flex-1 gap-4 justify-center xl:justify-start">
+              <CountUp
+                end={stat.num}
+                duration={5}
+                delay={2}
+                className="text-4xl text-outline xl:text-6xl font-extrabold" // Correction du "extrabold"
+              />
+              <p className={`${stat.text.length ? "max-w-[100px]" : "max-w-[150px]"}leading-snug text-white/80 `}>
+                {stat.text}
+              </p>
             </div>
+          ))}
         </div>
+      </div>
     </section>
   );
 };

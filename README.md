@@ -41,6 +41,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - Ajouter les certifications et les photo dans la parties _Formation_ "fait le 17/02/025"
 - Completer les services avec 'digitalisation industriel' dans l'onglet Services "fait le 17/02/025"
 - Ajouter mon Cv sous le btn Cv dans l'onglet _Accueil_
+* - IMPLEMENTATION COMPLETE de Experience avec des details
 
 ## Configuration du fichier .eslintrc.js pour le deployement
 
