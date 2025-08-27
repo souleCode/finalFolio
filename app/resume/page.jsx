@@ -73,21 +73,22 @@ const experience = {
       position: "AI Software Engineer",
       duration: "Juil-Sept 2025",
       type: "Stage",
-      description: "Mise en place de solutions d'IA pour la détection des Surcharges dans les Bus SOTRACO",
+      description: "Développement et déploiement d'un système de vision par ordinateur pour l'analyse de flux et la détection de surcharge dans les transports en commun.",
       details: {
         missions: [
-          "Formation de groupes de 05-10 étudiants aux technologies web modernes",
-          "Création de curricula pédagogiques pour les parcours Frontend et Backend",
-          "Développement d'outils internes pour automatiser les processus de formation",
-          "Encadrement de projets étudiants et évaluation des compétences acquises",
-          "Veille technologique et mise à jour continue des programmes de formation",
-          "Collaboration avec l'équipe pédagogique pour l'amélioration des méthodes d'enseignement"
+          "Conception et entraînement de modèles de deep learning (Object Detection, Segmentation) pour le comptage de personnes en milieu contraint.",
+          "Prétraitement et augmentation des datasets d'images/vidéos pour améliorer la robustesse du modèle face aux conditions variables (éclairage, angles, occlusions).",
+          "Optimisation des modèles pour leur déploiement sur des dispositifs embarqués à ressources limitées (latence, puissance de calcul).",
+          "Développement des pipelines de traitement d'images pour l'acquisition, l'analyse en temps réel et la génération d'alertes.",
+          "Intégration du modèle au sein d'une application backend et conception d'API pour la remontée des données de surcharge.",
+          "Validation terrain et itération continue sur le modèle based on les retours des tests."
         ],
-        technologies: ["HTML5", "CSS3", "JavaScript", "React.js", "Node.js", "Git", "GitHub", "VS Code"],
+        technologies: ["Python", "TensorFlow", "PyTorch", "OpenCV", "YOLO", "Docker", "FastAPI", "Git", "VueJS", "IoT", "Raspberry Pi"],
         achievements: [
-          "Plus de 10 étudiants formés avec un taux de réussite de 95%",
-          "Création de 50+ exercices pratiques et projets pédagogiques",
-          "Taux de satisfaction des formations maintenu à 4.8/5"
+          "Développement d'un modèle de détection avec une précision (mAP) supérieure à 92% sur le jeu de test.",
+          "Réduction de la latence d'inférence de 30% grâce à l'optimisation et la quantification du modèle.",
+          "Conception d'une solution légère capable de fonctionner sur un nano-ordinateur (Raspberry Pi).",
+          "Création d'un système fonctionnel fournissant des métriques en temps réel (taux d'occupation, alertes de surcharge)."
         ]
       }
     },
