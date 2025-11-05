@@ -25,6 +25,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { motion } from 'framer-motion';
+import AirflowIcon from '@/components/icons/Airflow';
+import { SnowflakeIcon } from 'lucide-react';
+import DbtIcon from '@/components/icons/Dbt';
+import DatabricksIcon from '@/components/icons/Databricks';
+import KafkaIcon from '@/components/icons/Kafka';
+import SnowflakeIconPerso from '@/components/icons/Snowflake';
+import AzureIcon from '@/components/icons/Azure';
+import DockerIcon from '@/components/icons/Docker';
+import KubernetesIcon from '@/components/icons/Kubernete';
+import KestraIcon from '@/components/icons/Kestra';
 
 // Données
 const about = {
@@ -210,7 +220,43 @@ const certifications = {
   title: 'Mes Certifications',
   categories: [
     {
-      name: "IA/Data Science",
+      name: "Data Engineering",
+      items: [
+        {
+          title: "Associate Data Engineer in Python",
+          institution: "DataCamp",
+          duration: "40 Heures",
+        },
+        {
+          title: "Professional Data Engineer in Python",
+          institution: "DataCamp",
+          duration: "44 Heures",
+        },
+        {
+          title: "Snowflake",
+          institution: "DataCamp",
+          duration: "---",
+        },
+        {
+          title: "Apache Airflow",
+          institution: "DataCamp",
+          duration: "---",
+        },
+        {
+          title: "Kestra platform",
+          institution: "DataCamp",
+          duration: "---",
+        },
+        {
+          title: "Kafka",
+          institution: "DataCamp",
+          duration: "---",
+        },
+      ]
+    },
+    ,
+    {
+      name: "ML/Data Science",
       items: [
         {
           title: "Associate AI Engineer",
@@ -321,6 +367,41 @@ const skills = {
   title: "Mes Compétences Techniques",
   description: "Doté d'un solide bagage technique et d'une expertise polyvalente, je maîtrise un large éventail de technologies et d'outils pour répondre aux défis complexes des projets modernes.",
   categories: [
+
+    {
+      name: "ML/Data Science",
+      skills: [
+        { icon: <TensorFlowIcon />, name: "TensorFlow", level: 88 },
+        { icon: <KerasIcon />, name: "Keras", level: 85 },
+        { icon: <PandasIcon />, name: "Pandas", level: 90 },
+        { icon: <MatplotlibIcon />, name: "Matplotlib", level: 82 },
+        { icon: <SeabornIcon />, name: "Seaborn", level: 80 },
+        { icon: <ScipyIcon />, name: "SciPy", level: 78 },
+      ]
+    },
+
+    {
+      name: "Data Engineering",
+      skills: [
+        { icon: <AirflowIcon />, name: "Apache Airflow", level: 88 },
+        { icon: <SnowflakeIconPerso />, name: "Snowflake", level: 85 },
+        { icon: <DbtIcon />, name: "DBT", level: 90 },
+        { icon: <DatabricksIcon />, name: "Databricks", level: 82 },
+        { icon: <KafkaIcon />, name: "Apache Kafka", level: 80 },
+
+      ]
+    },
+
+    {
+      name: "Cloud et DevOps",
+      skills: [
+        { icon: <AzureIcon />, name: "Azure", level: 75 },
+        { icon: <DockerIcon />, name: "Docker", level: 85 },
+        { icon: <KubernetesIcon />, name: "Kubernetes", level: 70 },
+        { icon: <KestraIcon />, name: "Kestra Platform", level: 72 },
+      ]
+    },
+
     {
       name: "Frontend",
       skills: [
@@ -342,17 +423,8 @@ const skills = {
         { icon: <SqlIcon />, name: "SQL", level: 85 },
       ]
     },
-    {
-      name: "IA/Data Science",
-      skills: [
-        { icon: <TensorFlowIcon />, name: "TensorFlow", level: 88 },
-        { icon: <KerasIcon />, name: "Keras", level: 85 },
-        { icon: <PandasIcon />, name: "Pandas", level: 90 },
-        { icon: <MatplotlibIcon />, name: "Matplotlib", level: 82 },
-        { icon: <SeabornIcon />, name: "Seaborn", level: 80 },
-        { icon: <ScipyIcon />, name: "SciPy", level: 78 },
-      ]
-    }
+
+
   ]
 };
 

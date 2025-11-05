@@ -112,7 +112,7 @@ const Home = () => {
               className="flex flex-col sm:flex-row items-center gap-4"
               variants={itemVariants}
             >
-              <a href="/resume/Cv_Pro_2025_version_pdf_Fr_1.0.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/resume/TRAORE_CV_VF.pdf" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="group bg-accent hover:bg-accent/90 text-primary font-semibold px-8 py-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-accent/20"
